@@ -179,3 +179,44 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
     margin-bottom: 24px;
     border: none;
 }
+
+/* reponsive media query */
+.hide{
+    display: none;
+}
+
+/* mobile device  */
+@media screen and (max-width:576px) {
+    .skills-container, .resume-container, .secondary-bg{
+        flex-direction: column;
+    }
+    .section-description{
+        padding-bottom: 15px;
+    }
+    .footer-column{
+        width: 90%;
+    }
+    footer{
+        padding: 20px;
+   }
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .secondary-bg{ 
+        flex-direction: column;
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-description{
+        padding-bottom: 15px;
+    }
+    .footer-column{
+        width: 90%;
+    }
+    footer{
+        padding: 20px;
+   }
+}
